@@ -1,0 +1,522 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1398px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  color: inherit;
+  border: none;
+}
+
+span {
+  color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+header .navbar {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .navbar__logo {
+  width: 101px;
+  display: flex;
+  gap: 4px;
+}
+header .navbar .navbar__logo .logo__img {
+  width: 40px;
+  height: 40px;
+}
+header .navbar .navbar__logo .logo__subtitle {
+  width: 57px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar .navbar__logo .logo__subtitle .logo__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+header .navbar .navbar__collection {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+header .navbar .navbar__collection .navbar__item {
+  height: 38px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  color: #000;
+  transition: 0.5s;
+}
+header .navbar .navbar__collection .navbar__item:hover .navbar__link {
+  cursor: pointer;
+  opacity: 0.7;
+}
+header .navbar .navbar__collection .navbar__item:active {
+  transform: scale(0.9);
+}
+header .navbar .navbar__form {
+  width: auto;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+header .navbar .navbar__form .form__btn {
+  max-width: 160px;
+  max-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+header .navbar .navbar__form .form__btn:hover button {
+  cursor: pointer;
+  background: #01bab3;
+  color: #fff;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+header .navbar .navbar__form .form__btn:active button {
+  transform: scale(0.9);
+}
+header .navbar .navbar__form .form__btn .navbar__btn {
+  width: 100%;
+  height: 100%;
+  padding: 2px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  background: transparent;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+}
+
+main {
+  width: 100%;
+  background: #f4f8fa;
+}
+main .main__block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .main__block .main__form {
+  width: 566px;
+  min-height: 566px;
+  background: #fff;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+main .main__block .main__form .main__logo {
+  width: 200%;
+  height: 40px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+main .main__block .main__form .main__subtitle {
+  width: 293px;
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+main .main__block .main__form .main__subtitle .main__title {
+  width: 100%;
+  height: 39px;
+}
+main .main__block .main__form .main__subtitle .main__title p {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 38px;
+}
+main .main__block .main__form .main__subtitle .form__desc {
+  width: 100%;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+main .main__block .main__form .main__subtitle .form__desc .fomr__desc__text {
+  width: 70%;
+}
+main .main__block .main__form .main__subtitle .form__desc .fomr__desc__text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+main .main__block .main__form .main__subtitle .form__desc .form__login {
+  width: 30%;
+}
+main .main__block .main__form .main__subtitle .form__desc .form__login a {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #01bab3;
+}
+main .main__block .main__form .email {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+main .main__block .main__form .email .email__content {
+  width: 100%;
+  height: 24px;
+}
+main .main__block .main__form .email .email__content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .main__block .main__form .email .email__content p span {
+  color: #01bab3;
+}
+main .main__block .main__form .email input {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+}
+main .main__block .main__form .email input:hover {
+  background: #fbfbfb;
+}
+main .main__block .main__form .email input:focus:invalid {
+  border-color: red;
+}
+main .main__block .main__form .email input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .email input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .phone {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+main .main__block .main__form .phone .phone__content {
+  width: 100%;
+  height: 24px;
+}
+main .main__block .main__form .phone .phone__content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .main__block .main__form .phone .phone__content p span {
+  color: #01bab3;
+}
+main .main__block .main__form .phone input {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+}
+main .main__block .main__form .phone input:hover {
+  background: #fbfbfb;
+}
+main .main__block .main__form .phone input:focus:invalid {
+  border-color: red;
+}
+main .main__block .main__form .phone .input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .phone .input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .location {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+main .main__block .main__form .location .country {
+  width: 50%;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+main .main__block .main__form .location .country .country__content {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+main .main__block .main__form .location .country .country__content p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .main__block .main__form .location .country .country__content p span {
+  color: #01bab3;
+}
+main .main__block .main__form .location .country .country__search {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #D9D9D9;
+}
+main .main__block .main__form .location .country .country__search:hover {
+  background: #fbfbfb;
+}
+main .main__block .main__form .location .country .country__search option {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  outline: none;
+}
+main .main__block .main__form .location .city {
+  width: 50%;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+main .main__block .main__form .location .city .city__content {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+main .main__block .main__form .location .city .city__content .city__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+main .main__block .main__form .location .city .city__content .city__text span {
+  color: #01bab3;
+}
+main .main__block .main__form .location .city .city__inp {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid #D9D9D9;
+}
+main .main__block .main__form .location .city .city__inp:hover {
+  background: #fbfbfb;
+}
+main .main__block .main__form .location .city .city__inp:focus:invalid {
+  border-color: red;
+}
+main .main__block .main__form .location .city .city__inp::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .location .city .city__inp::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .password {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .main__block .main__form .password .password__content {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+main .main__block .main__form .password .password__content .password__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+main .main__block .main__form .password .password__content .password__text span {
+  color: #01bab3;
+}
+main .main__block .main__form .password .password__inp {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+}
+main .main__block .main__form .password .password__inp:focus:invalid {
+  border-color: red;
+}
+main .main__block .main__form .password .password__inp:hover {
+  background: #fbfbfb;
+}
+main .main__block .main__form .password .password__inp::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .password .password__inp::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .confirm__password {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .main__block .main__form .confirm__password .confirm__content {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+main .main__block .main__form .confirm__password .confirm__content .confirm__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+main .main__block .main__form .confirm__password .confirm__content .confirm__text span {
+  color: #01bab3;
+}
+main .main__block .main__form .confirm__password .confirm__inp {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 6px;
+}
+main .main__block .main__form .confirm__password .confirm__inp:focus:invalid {
+  border-color: red;
+}
+main .main__block .main__form .confirm__password .confirm__inp:hover {
+  background: #fbfbfb;
+}
+main .main__block .main__form .confirm__password .confirm__inp::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .confirm__password .confirm__inp::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #a1a0a7;
+}
+main .main__block .main__form .form__inp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+}
+main .main__block .main__form .form__inp input {
+  width: 100%;
+  height: 52px;
+  background: #01bab3;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  transition: 0.7s;
+}
+main .main__block .main__form .form__inp input:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+main .main__block .main__form .form__inp input:active {
+  transform: scale(0.9);
+}
+
+.footer {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.footer p span {
+  color: #01bab3;
+}/*# sourceMappingURL=about.css.map */

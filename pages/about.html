@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-trend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="icon" href="../assets/images/logo.png">
+</head>
+<body>
+     <header class="header">
+        <div class="container">
+            <section class="navbar">
+                <div class="navbar__logo">
+                    <div class="logo__img">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="logo__subtitle">
+                        <p class="logo__title">
+                            trend
+                        </p>
+                    </div>
+                </div>
+                <ul class="navbar__collection">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="../index.html">
+                            <span>
+                                Services
+                            </span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./about.html">
+                            <span>
+                                About
+                            </span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./contact.html">
+                            <span>
+                                Contacts
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar__form">
+                    <div class="form__btn">
+                        <button class="navbar__btn">
+                            <span>
+                                Log in
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="form__btn">
+                        <button class="navbar__btn">
+                            <span>
+                                Open an account
+                            </span>
+                        </button>
+                    </div>
+                    <div class="form__btn">
+                        <button class="navbar__btn">
+                            <span>
+                                EN
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>   
+     </header>
+     <main class="main">
+        <div class="container">
+            <section class="main__block">
+                <form class="main__form">
+                    <div class="main__logo">
+                        <div class="logo__img">
+                            <img src="../assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="logo__subtitle">
+                            <h1 class="logo__title">
+                                trend
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="main__subtitle">
+                        <div class="main__title">
+                            <p>
+                                Welcome to ByTrend!
+                            </p>
+                        </div>
+                        <div class="form__desc">
+                            <div class="fomr__desc__text">
+                                <p>
+                                    Already have an account?
+                                </p>
+                            </div>
+                            <div class="form__login">
+                                <a href="#">
+                                    Log in
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email" class="email__content">
+                            <p>
+                                Email <span>*</span>
+                            </p>
+                        </label>
+                        <input type="email" id="email" placeholder="Email address" required>                       
+                    </div>
+                    <div class="phone">
+                        <label for="phone" class="phone__content">
+                            <p>
+                                Phone <span>*</span>
+                            </p>
+                        </label>
+                        <input type="tel" id="phone" placeholder="xxx-xxx-xx-xx" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" >              
+                    </div>
+                    <div class="location">
+                        <div class="country">
+                            <div class="country__content">
+                                <p>
+                                    Country<span>*</span>
+                                </p>
+                            </div>
+                            <select class="country__search" name="" id="">
+                                <option value="">Russia</option>
+                                <option value="">Uzbekistan</option>
+                                <option value="">England</option>
+                            </select>
+                        </div>
+                        <div class="city">
+                            <label for="city" class="city__content">
+                                <p class="city__text">
+                                    City<span>*</span>
+                                </p>
+                            </label>
+                            <input type="text" class="city__inp" id="city" placeholder="Name of the city" required>
+                        </div>
+                    </div>
+                    <div class="password">
+                        <div class="password__content">
+                            <p class="password__text">
+                                Password<span>*</span>
+                            </p>
+                            <img src="../assets/images/question-icon.png" alt="">
+                        </div>
+                        <input type="password" class="password__inp" placeholder="************" required>
+                    </div>
+                    <div class="confirm__password">
+                        <div class="confirm__content">
+                            <p class="confirm__text">
+                                Confirm password<span>*</span>
+                            </p>
+                        </div>
+                        <input type="confirm password" class="confirm__inp"  required>
+                    </div>
+                    <div class="form__inp">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>
+            By signing up, you are agreeing to our <span>Terms & Conditions</span> and <span>Privacy Policy</span>.
+        </p>
+    </footer>
+</body>
+</html>
